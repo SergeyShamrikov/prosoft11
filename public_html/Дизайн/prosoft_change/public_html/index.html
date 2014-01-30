@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    
+    <div id="user_area">
+        <div id="avatar">
+            <img src="images/ava.jpg" />
+        </div>
+        <div id="user_area_inner">
+            <div id="user_name">Константин Костантинопольский</div>
+            <div id="user_links">
+                <a href="#" id="profile">Профиль</a>
+                <div class="spec_d"></div>
+                <a href="#" id="logout">Выход</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="page">
+        <table class="cm">
+            <tr>
+                <td>
+                    <div id="header">
+                        <a id="logo" href="/"></a>
+                        <ul id="menu">
+                            <li>
+                                <a>Файлы</a>
+                            </li>
+                            <li>
+                                <a>Помощь</a>
+                            </li>
+                            <li>
+                                <a>Сообщения</a>
+                            </li>
+                            <li>&nbsp;</li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <form id="search" method="GET" action="/">
+                        <div id="search_area">
+                            <input type="text" name="query" id="query" value="" />
+                            <input type="submit" id="submit" value="" />
+                            <div class="clear"></div>
+                        </div>
+                        <div id="extend_link">
+                            <a href="#">Расширеный поиск</a>
+                        </div>
+                        <div id="extend_area">
+                            <div>
+                                <div id="ex_top">
+                                    Расширенный поиск
+                                    <div class="spec_d"></div>
+                                    <a href="#" id="clearFields">Очистить поля</a>
+                                    <input type="reset" id="_clearFields" style="display: none;" />
+                                </div>
+                                <div id="ex_bot">
+                                    <div id="triangle"></div>
+                                    <div id="ex_bot_inner_top">
+                                        <select id="brand" name="brand">
+                                            <option value="0" selected="selected">Бренд</option>
+                                            <option value="1">Бренд 1</option>
+                                            <option value="2">Бренд 2</option>
+                                            <option value="3">Бренд 3</option>
+                                            <option value="4">Бренд 4</option>
+                                        </select>
+                                        <div class="spec_f"></div>
+                                        <select id="type" name="type">
+                                            <option value="0" selected="selected">Тип информационного материала</option>
+                                            <option value="1">Тип информационного материала 1</option>
+                                            <option value="2">Тип информационного материала 2</option>
+                                            <option value="3">Тип информационного материала 3</option>
+                                            <option value="4">Тип информационного материала 4</option>
+                                        </select>
+                                        <div class="spec_f"></div>
+                                        <div style="display: inline-block; position: relative;">
+                                            <input type="text" name="date" id="date" value="Дата обновления" />
+                                            <a href="#" id="calendar"></a>
+                                        </div>
+                                        <div class="spec_f"></div>
+                                        <input type="text" name="additional" id="additional" value="Дополнительное поле" />
+                                    </div>
+                                    <div id="ex_bot_inner_bot">
+                                        <span>Формат:</span>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="pdf" name="pdf" />
+                                                <label for="pdf">pdf</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="doc" name="doc" />
+                                                <label for="doc">doc</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="docx" name="docx" />
+                                                <label for="docx">docx</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="xls" name="xls" />
+                                                <label for="xls">xls</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="xlsx" name="xlsx" />
+                                                <label for="xlsx">xlsx</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="ppt" name="pptx" />
+                                                <label for="pptx">pptx</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="jpg" name="jpg" />
+                                                <label for="jpg">jpg</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="png" name="png" />
+                                                <label for="png">png</label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="mkv" name="mkv" />
+                                                <label for="mkv">mkv</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="mov" name="mov" />
+                                                <label for="mov">mov</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="avi" name="avi" />
+                                                <label for="avi">avi</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="mp3" name="mp3" />
+                                                <label for="mp3">mp3</label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="iso" name="iso" />
+                                                <label for="iso">iso</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="7z" name="7z" />
+                                                <label for="7z">7z</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="zip" name="zip" />
+                                                <label for="zip">zip</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="rar" name="rar" />
+                                                <label for="rar">rar</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="cogwheel"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="footer">
+        <span>&copy; Прософт</span>
+        <div class="spec_d"></div>
+        <a href="#" id="rss">rss</a>
+        <div id="messeger">
+            <a href="#" id="messager_link_1"></a>
+            <a href="#" id="messager_link_2"></a>
+        </div>
+    </div>
+    
+</body>
+</html>

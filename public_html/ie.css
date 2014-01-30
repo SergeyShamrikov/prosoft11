@@ -1,0 +1,7 @@
+#extend_area > div{behavior:url(PIE.htc);position:relative;}
+#triangle{
+	background: url(images/triangle1.png) 0 0 no-repeat;
+}
+#ex_bot_inner_bot span{
+	top: -3px;
+}
